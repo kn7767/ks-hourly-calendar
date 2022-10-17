@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+        <div class="today">
+            <div>9:00am</div>
+            <div>10:00am</div>
+            <div>11:00am</div>
+            <div>12:00pm</div>
+            <div>1:00pm</div>
+            <div>2:00pm</div>
+            <div>3:00pm</div>
+            <div>4:00pm</div>
+            <div>5:00pm</div>
+        </div>
+        <div id="inputs">
+            <input type="text" id="nine" name="nineam"><br>
+            <input type="text" id="ten" name="tenam"><br>
+            <input type="text" id="eleven" name="elevenam"><br>
+            <input type="text" id="twelve" name="twelvepm"><br>
+            <input type="text" id="one" name="onepm"><br>
+            <input type="text" id="two" name="twopm"><br>
+            <input type="text" id="three" name="threepm"><br>
+            <input type="text" id="four" name="fourpm"><br>
+            <input type="text" id="five" name="fivepm"><br>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
