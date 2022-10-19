@@ -24,7 +24,9 @@ You should add a quality description of the project, a screenshot of the applica
 # Hourly Calendar 
 
 ## Project status
-The site is not yet complete.
+The site is not yet complete. Although the input values are stored in the local storage, the input itself does not stay on the page when the page is reloaded. Instead of 9 separate save buttons, there is only one save button that saves information on the entire page, including sections that were not filled in. To combat the issue of resetting the local storage to be blank, I added an <if (var !="")> condition to prevent previously added tasks from erasing in the console.log on each save, although it will not be necessary if I can get the input values to save on each reload, and I intend on getting rid of those conditions when the input values are able to remain on the page. A "Clear All" button was unecessarily added for a better understanding of the local storage. 
+
+Additionally, I am still attemping to add time blocks and an indication of the current hour on the scheduler. 
 
 ## Description
 This hourly calendar is a daily scheduler that schedules by the hour in a workday, and lets the user know the current hour, as well as what hours have passed and how many hours are left in the day.
