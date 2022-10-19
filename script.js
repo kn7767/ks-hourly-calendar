@@ -4,19 +4,20 @@ $('#currentDay').text(today.format('LLLL'));
 renderInput();
 
 var saveInput = document.getElementById('save');
-var nineam = document.getElementById('nineam');
 
 function savetoStorage() {
     let hournine = document.querySelector('#nine').value;
     localStorage.setItem('nine', hournine);
-    console.log(hournine);
 }
 saveInput.addEventListener("click", savetoStorage);
 
 function renderInput() {
 var hournine = localStorage.getItem('nine');
 hournine.textContent = hournine;
+console.log(hournine);
+
 console.log(localStorage);
+$("#nine .description").val(localStorage.getItem("nine"));
 }
 
 
