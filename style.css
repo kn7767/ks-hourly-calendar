@@ -1,6 +1,5 @@
 :root {
   --b: 1px solid;
-  --p: ;
   --m: 5px;
 }
 
@@ -96,3 +95,21 @@ body {
     margin-bottom: var(--m);
   }
   
+  #inputs > input:hover {
+    background-color: lightblue;
+  }
+
+  #clear {
+    padding: 10px 15px 10px 15px;
+  }
+
+  #save {
+    padding: 10px 15px 10px 15px;
+    background-color: rgb(183, 231, 183);
+    border: 1px solid;
+    border-radius: 5%;
+    float: right;
+  }
+  #save:hover {
+    background-color: rgb(120, 174, 120);
+  }
