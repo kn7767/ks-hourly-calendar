@@ -2,7 +2,6 @@ var today = moment();
 $('#currentDay').text(today.format('LLLL'));
 
 var clearAll = document.getElementById('clear');
-
 clearAll.addEventListener('click', function() {
     localStorage.clear();
     location.reload();
@@ -60,7 +59,7 @@ console.log("10:00AM = " + hourten);
 var houreleven = localStorage.getItem('eleven');
 console.log("11:00AM = " + houreleven);
 var hourtwelve = localStorage.getItem('twelve');
-console.log("12:00 PM = " + hourtwelve);
+console.log("12:00PM = " + hourtwelve);
 var hourone = localStorage.getItem('one');
 console.log("1:00PM = " + hourone);
 var hourtwo = localStorage.getItem('two');
@@ -68,36 +67,51 @@ console.log("2:00PM = " + hourtwo);
 var hourthree = localStorage.getItem('three');
 console.log("3:00PM = " + hourthree);
 var hourfour = localStorage.getItem('four');
-console.log("4:00 PM = " + hourfour);
+console.log("4:00PM = " + hourfour);
 var hourfive = localStorage.getItem('five');
-console.log("5:00 PM = " + hourfive);
+console.log("5:00PM = " + hourfive);
 }
 
 
+// function timeTracker(event) {
+//     // var timeBlock = document.getElementById('inputs');
+//     var currentHour = moment().hour();
+
+//     // var currentTimeBlock = moment($(timeBlock).text().trim(), 'hA').hour();
+//     $("#inputs").each(function() {
+//     let currentTimeBlock = parseInt($(event).attr('id'));
+    
+//     console.log("Time is = " + currentHour);
+//     console.log("Time block = " + currentTimeBlock);
+
+//     if (currentTimeBlock > currentHour) {
+//         $(event).addClass('future');
+//         $(event).removeClass('past');
+//         $(event).removeClass('present');
+//     }
+//     else if (currentTimeBlock === currentHour){
+//         $(event).addClass('present');
+//         $(event).removeClass('past');
+//         $(event).removeClass('future');
+//     }
+//     else {
+//         $(event).addClass('past');
+//         $(event).removeClass('present');
+//         $(event).removeClass('future');
+//     }
+// })}
+
+let currentTime = moment().format("H");
+console.log(currentTime);
+let currentHour = parseInt(currentTime);
 
 function timeTracker(event) {
-    // var timeBlock = document.getElementById('inputs');
-    var currentHour = moment().hour();
+let currentTimeBlock = parseInt($(event).attr('id'));
 
-    // var currentTimeBlock = moment($(timeBlock).text().trim(), 'hA').hour();
-    let currentTimeBlock = parseInt($(event).attr('id'));
-    
-    console.log("Time is = " + currentHour);
-    console.log("Time block = " + currentTimeBlock);
-
-    if (currentTimeBlock > currentHour) {
-        $(event).addClass('future');
-        $(event).removeClass('past');
-        $(event).removeClass('present');
-    }
-    else if (currentTimeBlock === currentHour){
-        $(event).addClass('present');
-        $(event).removeClass('past');
-        $(event).removeClass('future');
-    }
-    else {
-        $(event).addClass('past');
-        $(event).removeClass('present');
-        $(event).removeClass('future');
-    }
-}
+if (currentTimeBlock > currentHour) {
+    $(event).addClass('future'); }
+else if (currentTimeBlock === currentHour){
+    $(event).addClass('present');}
+else {
+    $(event).addClass('past');
+}};
