@@ -49,7 +49,7 @@ function savetoStorage(userInput) {
     localStorage.setItem('five', hourfive);
     }
     location.reload();
-    userInput.preventDefault(); //attemp to prevent input values from disappearing
+    userInput.preventDefault(); //attempt to prevent input values from disappearing
 }
 saveInput.addEventListener("click", savetoStorage);
 
@@ -73,35 +73,6 @@ console.log("4:00PM = " + hourfour);
 var hourfive = localStorage.getItem('five');
 console.log("5:00PM = " + hourfive);
 }
-
-
-// function timeTracker(event) {
-//     // var timeBlock = document.getElementById('inputs');
-//     var currentHour = moment().hour();
-
-//     // var currentTimeBlock = moment($(timeBlock).text().trim(), 'hA').hour();
-//     $("#inputs").each(function() {
-//     let currentTimeBlock = parseInt($(event).attr('id'));
-    
-//     console.log("Time is = " + currentHour);
-//     console.log("Time block = " + currentTimeBlock);
-
-//     if (currentTimeBlock > currentHour) {
-//         $(event).addClass('future');
-//         $(event).removeClass('past');
-//         $(event).removeClass('present');
-//     }
-//     else if (currentTimeBlock === currentHour){
-//         $(event).addClass('present');
-//         $(event).removeClass('past');
-//         $(event).removeClass('future');
-//     }
-//     else {
-//         $(event).addClass('past');
-//         $(event).removeClass('present');
-//         $(event).removeClass('future');
-//     }
-// })}
 
 let currentTime = moment().format("H");
 console.log("Current hour = " + currentTime);

@@ -113,13 +113,3 @@ body {
   #save:hover {
     background-color: rgb(120, 174, 120);
   }
-
-  .past {
-    background-color: grey;
-  }
-  .present {
-    background-color: #77dd77;
-  }
-  .future {
-    background-color: lightgreen;
-  }

@@ -19,10 +19,10 @@ Repo:
 https://github.com/kn7767/ks-hourly-calendar 
 
 ## Visuals
-scheduler.png
+(./scheduler.png)
 
 ## Installation
-git clone ""
+git clone "https://github.com/kn7767/ks-hourly-calendar.git"
 
 ## Usage
 Users can type their to-do list by the hour by typing in the input boxes next to the hour tasks should be started by. Users can save their chart by clicking the "save" button on the bottom right so their schedule is not lost.
